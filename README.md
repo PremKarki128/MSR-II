@@ -9,8 +9,8 @@
 ## Hardware:
 ### Requirement define by Auther
 '''
-For preprocessing the Data: Multicore System is required 
-System with GPU is recommended but CPU also fine.
+-For preprocessing the Data: Multicore System is required 
+-System with GPU is recommended but CPU also fine.
 '''
 ### Used System
 
@@ -18,14 +18,14 @@ System with GPU is recommended but CPU also fine.
 ## Software:
 ### Requirements Define by Auther
 Ubuntu System:
-  Python version 3.5 or newer \n
-  TensorFlow version 1.5 or newer \n
-  For GPU system : cuDNN version 0.7 or latest
+  -Python version 3.5 or newer \n
+  -TensorFlow version 1.5 or newer \n
+  -For GPU system : cuDNN version 0.7 or latest
 
 ### Used System to reproduce
- Windows Subsystem for Linux 20.04 on Window 10
- Python Version: 3.8.5
- TensorFlow Version: 2.4.1
+ -Windows Subsystem for Linux 20.04 on Window 10
+ -Python Version: 3.8.5
+ -TensorFlow Version: 2.4.1
 
 # Process
 
