@@ -3,7 +3,7 @@
 # Metadata
 ## A reproducation as part of MSR course ar MSR course 2020/21 at UniKo, CS department, SoftLang Team
 ## Machine Learning Based Recommendation of Method Names: How Far Are We.
-### [DBLP link]( https://dblp.org/rec/conf/kbse/JiangLJ19.html)
+### [DBLP link:https://dblp.org/rec/conf/kbse/JiangLJ19.html]( https://dblp.org/rec/conf/kbse/JiangLJ19.html)
 
 # Requirements
 ## Hardware:
@@ -14,6 +14,7 @@ System with GPU is recommended but CPU also fine.
 '''
 ### Used System
 
+
 ## Software:
 ### Requirements Define by Auther
 Ubuntu System:
@@ -23,10 +24,8 @@ Ubuntu System:
 
 ### Used System to reproduce
  Windows Subsystem for Linux 20.04 on Window 10
- #### Installation Process:
- Go to Control Panel:-> Program:-> Turn Windows features on or off and check the Windows Subsystem For Linux  after restart of the Windows go to Microsoft Store and download the Linux kernel and run to install.
-Python Version: 3.8.5
-TensorFlow Version: 2.4.1
+ Python Version: 3.8.5
+ TensorFlow Version: 2.4.1
 
 # Process
 
