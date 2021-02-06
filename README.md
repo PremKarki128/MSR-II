@@ -78,7 +78,7 @@ Source of the data:  downloaded from the Authers provided Link
 #### Output Data
 - My_dataset.test,  My_dataset.train,  My_dataset.val and  My_dataset.dict is created with the C2V file formate after running the preprocess.sh inside the folder Data/my_dataset.
 - log.txt is created during the evaluation of the process wich consist of methods name and prediction my the train model.
-<center style="padding: 40px"><img width="70%" src="https://github.com/tech-srl/code2vec/raw/master/images/network.png" /></center>
+<center style="padding: 40px"><img width="70%" src="https://github.com/PremKarki128/MSR-II/blob/master/Process/Image/ErrorResult2.png" /></center>
 
 # Delta
 The reproduction of whole paper is large and tedious projects which is not fesible for my using hardware and time frame. I had reproduced the Evaluated Approach only. The Evaluated Approach is based on the Mechine Learning based recommendation of methods name Code2vec. The process of reproduction is started with the cloning the repository [Method-Name-Recommendation/HeMa, 2019](https://github.com/Method-Name-Recommendation/HeMa) which is created by the Authers for reproduction procedure. The some of the package which are required are also clone from the Authers resources of the the code2vec:"A neural network for learning distributed representations of code" which is available [github repository](https://github.com/tech-srl/code2vec) 
