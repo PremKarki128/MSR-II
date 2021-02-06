@@ -30,6 +30,7 @@ Ubuntu System:
 
 
 # Process
+
 - **Step 1: Creating Data Sets**
 The new data set is downloaded from the Authers given link wich need to preprocess. (Compressed: 408MB Extracted :2,4GB)
 ```
@@ -67,7 +68,31 @@ Load the model by the following comman, follow the instruction and edit the inpu
 ```
 python3 code2vec.py --load models/java14_model/saved_model_iter8 --predict
 ```
-
+# Data
+Source of the data:  downloaded from the Authers provided Link
+#### INPUT DATA
+- [java-med](https://s3.amazonaws.com/code2seq/datasets/java-med.tar.gz) consists of three categories of test, training and validation data with numerious files and folder
+- [java14m_data](https://s3.amazonaws.com/code2vec/data/java14m_data.tar.gz) consit of dictionaries, test, train and validation datasets with C2V file system.
+#### temporary Data
+- java-med.train.raw.txt, java-med.val.raw.txt and java-med.test.raw.txt file is created during the preprocessing which is deleted if the complete the process without the distribunce and bug free.
+#### Output Data
+- My_dataset.test,  My_dataset.train,  My_dataset.val and  My_dataset.dict is created with the C2V file formate after running the preprocess.sh inside the folder Data/my_dataset.
+- log.txt is created during the evaluation of the process wich consist of methods name and prediction my the train model.
+<center style="padding: 40px"><img width="70%" src="https://github.com/tech-srl/code2vec/raw/master/images/network.png" /></center>
 
 # Delta
+The reproduction of whole paper is large and tedious projects which is not fesible for my using hardware and time frame. I had reproduced the Evaluated Approach only. The Evaluated Approach is based on the Mechine Learning based recommendation of methods name Code2vec. The process of reproduction is started with the cloning the repository [Method-Name-Recommendation/HeMa, 2019](https://github.com/Method-Name-Recommendation/HeMa) which is created by the Authers for reproduction procedure. The some of the package which are required are also clone from the Authers resources of the the code2vec:"A neural network for learning distributed representations of code" which is available [github repository](https://github.com/tech-srl/code2vec) 
+
+### Process Delta:
+The replication process almost flow the complete process of the paper in the Evaluated Approach. Although we try to preprocess the data java-med by runing preprocess.py, got the error after running for more than 10 hours. Extraction of the paths of the file for test and validation data is completed about an hour but for training floder execute for more then 9 hours and terminate with the error message "Cat: Write error: Broken pipe". Training of the model take about 15 hours and the size of the model is very large and not possible to share by using the internet network.The size of the 8 epochs train model performed by the Auther is 1.4 GB which took 17 minute to evalute the test dataset with the **precision: 0.659, recall:0.531 and F1 0.588 score.**
+
+### Data Delta
+The two source of data [java-med](https://s3.amazonaws.com/code2seq/datasets/java-med.tar.gz) and [java14m_data](https://s3.amazonaws.com/code2vec/data/java14m_data.tar.gz) is used which is provided by the Auther. The java-med is not preprocess which we tried to process but we were not able to completed produce the final result due to some bug and hardware failier. The java14m_data is preprocess data which is used for the training and evaluation approach of the models. 
+
+### Problem Delta:
+- I am not able to estimate complexity  of the problem domain of the reproduction of the technical parts of the paper and claim the reproduction task alone which make me more difficult to figure out the problem and bug in the process and coding and took longer time than the estimate and only able to complete the Evaluated Approach.
+- The hardware required for the task is not enough due to which I need to terminate the preprocessing task after runnig for the more than 10 hours without the results.
+- The training processing took more than required time  and terminate without complition.
+
+
 
