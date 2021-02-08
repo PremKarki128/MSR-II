@@ -30,9 +30,16 @@ Ubuntu System:
 
 
 # Process
+Initial Step: Clone the repository 
 ```
-**Acknowledgement for reproduction test** 
-For observing how it works better to escape the preprocessing and training a model which is going to take a lot of time, so you can start from the Evaluation steps after downloading the preprocess datasets. 
+git clone https://github.com/PremKarki128/MSR-II
+cd MSR-II/Process
+```
+
+```
+Acknowledgement for reproduction test 
+For observing how it works better to escape the preprocessing and training a model which is going to take a lot of time,
+so you can start from the Evaluation steps after downloading the preprocess datasets. 
 ```
 - **Step 1: Creating Data Sets**
 The new data set is downloaded from the Authers given link wich need to preprocess. (Compressed: 408MB Extracted :2,4GB)
