@@ -30,7 +30,18 @@ Ubuntu System:
 
 
 # Process
+Initial Step: Clone the repository 
+```
+git clone https://github.com/PremKarki128/MSR-II
+cd MSR-II/Process
+```
 
+
+**Note:Acknowledgement for reproduction test** 
+```
+For observing how it works better to escape the preprocessing and training a model which is going to take a 
+lot of time, so you can start from the Evaluation steps after downloading the preprocess java-small dataset. 
+```
 - **Step 1: Creating Data Sets**
 The new data set is downloaded from the Authers given link wich need to preprocess. (Compressed: 408MB Extracted :2,4GB)
 ```
@@ -39,12 +50,16 @@ tar -xvzf java-med.tar.gz
 source preprocess.sh
 ```
 #### OR
-Download the preprocess data from the Authers given link which contain training, test and validation datasets
+̴~~Download the preprocess data from the Authers given link which contain training, test and validation datasets(compressed:6.2GB Extracted: 32GB)~~
 ```
 wget https://s3.amazonaws.com/code2vec/data/java14m_data.tar.gz
 tar -xvzf java14m_data.tar.gz
 ```
-
+Download java-Small size dataset (compressed: 366MB, extracted 1.9GB) 
+```
+wget https://s3.amazonaws.com/code2vec/data/java-small_data.tar.gz
+tar -xvzf java-small_data.tar.gz
+```
 - **Step 2: Training a Model**
 For training the model from initial level we need to edit the file common.py to configuration of hyper-parameters and train.sh file to point the right preprocess "java14m" data set then need to run train.sh script.
 ```
@@ -78,7 +93,7 @@ Source of the data:  downloaded from the Authers provided Link
 #### Output Data
 - My_dataset.test,  My_dataset.train,  My_dataset.val and  My_dataset.dict is created with the C2V file formate after running the preprocess.sh inside the folder Data/my_dataset.
 - log.txt is created during the evaluation of the process wich consist of methods name and prediction my the train model.
-<center style="padding: 40px"><img width="70%" src="https://github.com/PremKarki128/MSR-II/blob/master/Process/Image/TXTLog.png" title="Log file of the Evaluation" /></center>
+<center style="padding: 40px"><img width="70%" src="https://github.com/PremKarki128/MSR-II/blob/master/Process/Image/orginalVspredic.png" title="Log file of the Evaluation" /><img width="70%" src="https://github.com/PremKarki128/MSR-II/blob/master/Process/Image/evaluationfinal.png" title="Log data of the Evaluation process" /></center>
 
 # Delta
 The reproduction of whole paper is large and tedious projects which is not fesible for my using hardware and time frame. I had reproduced the Evaluated Approach only. The Evaluated Approach is based on the Mechine Learning based recommendation of methods name Code2vec. The process of reproduction is started with the cloning the repository [Method-Name-Recommendation/HeMa, 2019](https://github.com/Method-Name-Recommendation/HeMa) which is created by the Authers for reproduction procedure. The some of the package which are required are also clone from the Authers resources of the the code2vec:"A neural network for learning distributed representations of code" which is available [github repository](https://github.com/tech-srl/code2vec) 
