@@ -50,7 +50,7 @@ tar -xvzf java-med.tar.gz
 source preprocess.sh
 ```
 #### OR
-̴ ̴ Download the preprocess data from the Authers given link which contain training, test and validation datasets(compressed:6.2GB Extracted: 32GB) ̴ ̴
+̴~~_Download the preprocess data from the Authers given link which contain training, test and validation datasets(compressed:6.2GB Extracted: 32GB)~~_
 ```
 wget https://s3.amazonaws.com/code2vec/data/java14m_data.tar.gz
 tar -xvzf java14m_data.tar.gz
