@@ -40,7 +40,7 @@ cd MSR-II/Process
 **Note:Acknowledgement for reproduction test** 
 ```
 For observing how it works better to escape the preprocessing and training a model which is going to take a 
-lot of time, so you can start from the Evaluation steps after downloading the preprocess datasets. 
+lot of time, so you can start from the Evaluation steps after downloading the preprocess java-small dataset. 
 ```
 - **Step 1: Creating Data Sets**
 The new data set is downloaded from the Authers given link wich need to preprocess. (Compressed: 408MB Extracted :2,4GB)
@@ -50,7 +50,7 @@ tar -xvzf java-med.tar.gz
 source preprocess.sh
 ```
 #### OR
-̴~~_Download the preprocess data from the Authers given link which contain training, test and validation datasets(compressed:6.2GB Extracted: 32GB) _~~
+̴~~Download the preprocess data from the Authers given link which contain training, test and validation datasets(compressed:6.2GB Extracted: 32GB)~~
 ```
 wget https://s3.amazonaws.com/code2vec/data/java14m_data.tar.gz
 tar -xvzf java14m_data.tar.gz
