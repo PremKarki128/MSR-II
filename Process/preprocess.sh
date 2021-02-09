@@ -18,9 +18,9 @@
 #   recommended to use a multi-core machine for the preprocessing 
 #   step and set this value to the number of cores.
 # PYTHON - python3 interpreter alias.
-TRAIN_DIR=java-med/training
-VAL_DIR=java-med/validation
-TEST_DIR=java-med/test
+TRAIN_DIR=my_train_dir
+VAL_DIR=my_val_dir
+TEST_DIR=my_test_dir
 DATASET_NAME=my_dataset
 MAX_CONTEXTS=200
 WORD_VOCAB_SIZE=1301136
@@ -37,7 +37,7 @@ EXTRACTOR_JAR=JavaExtractor/JPredict/target/JavaExtractor-0.0.1-SNAPSHOT.jar
 
 mkdir -p data
 mkdir -p data/${DATASET_NAME}
-clear
+
 echo "Extracting paths from validation set..."
 ${PYTHON} JavaExtractor/extract.py --dir ${VAL_DIR} --max_path_length 8 --max_path_width 2 --num_threads ${NUM_THREADS} --jar ${EXTRACTOR_JAR} > ${VAL_DATA_FILE}
 echo "Finished extracting paths from validation set"
