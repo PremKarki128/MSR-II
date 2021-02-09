@@ -18,9 +18,9 @@
 #   recommended to use a multi-core machine for the preprocessing 
 #   step and set this value to the number of cores.
 # PYTHON - python3 interpreter alias.
-TRAIN_DIR=my_train_dir
-VAL_DIR=my_val_dir
-TEST_DIR=my_test_dir
+TRAIN_DIR=java-med/training
+VAL_DIR=java-med/validation
+TEST_DIR=java-med/test
 DATASET_NAME=my_dataset
 MAX_CONTEXTS=200
 WORD_VOCAB_SIZE=1301136
