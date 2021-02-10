@@ -50,7 +50,8 @@ tar -xvzf java-med.tar.gz
 source preprocess.sh
 ```
 #### OR
-̴~~Download the preprocess data from the Authers given link which contain training, test and validation datasets(compressed:6.2GB Extracted: 32GB)~~
+̴Download the preprocess **java14m dataset** from the Authers given link which contain training, test and validation datasets(compressed:6.2GB Extracted: 32GB)
+**For fast process escape this and download the java-small dataset**
 ```
 wget https://s3.amazonaws.com/code2vec/data/java14m_data.tar.gz
 tar -xvzf java14m_data.tar.gz
@@ -74,10 +75,14 @@ tar -xvzf java14m_model.tar.gz
 
 - **Step 3: Evaluating the Model**
 After the training we can use the test datasets to check how the model is functioning. While evaluating "log.txt" is written which contain the example and predicted results. To evaluate Run 
+**_For java14m dataset_**  
 ```
 python3 code2vec.py --load models/java14_model/saved_model_iter8 --test data/java14m/java14m.test.c2v
 ```
-
+**_For java-small dataset_**
+```
+python3 code2vec.py --load models/java14_model/saved_model_iter8 --test java-small/java-small.test.c2v
+```
 - **Step 4: Manual Examination**
 Load the model by the following comman, follow the instruction and edit the input.java and enter the java method or code snippet and examine the model's prediction.
 ```
