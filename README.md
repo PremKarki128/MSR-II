@@ -77,16 +77,16 @@ tar -xvzf java14m_model.tar.gz
 After the training we can use the test datasets to check how the model is functioning. While evaluating "log.txt" is written which contain the example and predicted results. To evaluate Run 
 **_For java14m dataset_**  
 ```
-python3 code2vec.py --load models/java14_model/saved_model_iter8 --test data/java14m/java14m.test.c2v
+python3 code2vec.py --load models/java14_model/saved_model_iter8.release --test data/java14m/java14m.test.c2v
 ```
 **_For java-small dataset_**
 ```
-python3 code2vec.py --load models/java14_model/saved_model_iter8 --test java-small/java-small.test.c2v
+python3 code2vec.py --load models/java14_model/saved_model_iter8.release --test java-small/java-small.test.c2v
 ```
 - **Step 4: Manual Examination**
 Load the model by the following comman, follow the instruction and edit the input.java and enter the java method or code snippet and examine the model's prediction.
 ```
-python3 code2vec.py --load models/java14_model/saved_model_iter8 --predict
+python3 code2vec.py --load models/java14_model/saved_model_iter8.release --predict
 ```
 # Data
 Source of the data:  downloaded from the Authers provided Link
