@@ -1,7 +1,7 @@
 # MSR-II/III
 
 # Metadata
-## A reproducation as part of MSR course ar MSR course 2020/21 at UniKo, CS department, SoftLang Team
+### A reproducation as part of MSR course ar MSR course 2020/21 at UniKo, CS department, SoftLang Team
 ### Machine Learning Based Recommendation of Method Names: How Far Are We.
 ### [DBLP link:https://dblp.org/rec/conf/kbse/JiangLJ19.html]( https://dblp.org/rec/conf/kbse/JiangLJ19.html)
 
@@ -43,7 +43,7 @@ For observing how it works better to escape the preprocessing and training a mod
 lot of time, so you can start from the Evaluation steps after downloading the preprocess java-small dataset. 
 ```
 - **Step 1: Creating Data Sets**
-The new data set is downloaded from the Authers given link wich need to preprocess. (Compressed: 408MB Extracted :2,4GB)
+The new datasets is downloaded from the Authers given link wich need to preprocess. (Compressed: 408MB Extracted :2,4GB)
 ```
 wget https://s3.amazonaws.com/code2seq/datasets/java-med.tar.gz
 tar -xvzf java-med.tar.gz
@@ -51,12 +51,12 @@ source preprocess.sh
 ```
 #### OR
 ̴Download the preprocess **java14m dataset** from the Authers given link which contain training, test and validation datasets(compressed:6.2GB Extracted: 32GB)
-**For fast process escape this and download the java-small dataset**
+**For fast process escape this and download the java-small datasets**
 ```
 wget https://s3.amazonaws.com/code2vec/data/java14m_data.tar.gz
 tar -xvzf java14m_data.tar.gz
 ```
-Download java-Small size dataset (compressed: 366MB, extracted 1.9GB) 
+Download java-Small size datasets (compressed: 366MB, extracted 1.9GB) 
 ```
 wget https://s3.amazonaws.com/code2vec/data/java-small_data.tar.gz
 tar -xvzf java-small_data.tar.gz
@@ -88,6 +88,7 @@ Load the model by the following comman, follow the instruction and edit the inpu
 ```
 python3 code2vec.py --load models/java14_model/saved_model_iter8.release --predict
 ```
+<center style="padding: 40px"><img width="70%" src="https://github.com/PremKarki128/MSR-II/blob/master/Process/Image/manualEvalution1.png" title="suggestion mthod's name" /><img width="70%" src="https://github.com/PremKarki128/MSR-II/blob/master/Process/Image/manualEvaluation2.png" title="Log data of the Evaluation process" /></center>
 # Data
 Source of the data:  downloaded from the Authers provided Link
 #### INPUT DATA
