@@ -88,7 +88,7 @@ Load the model by the following comman, follow the instruction and edit the inpu
 ```
 python3 code2vec.py --load models/java14_model/saved_model_iter8.release --predict
 ```
-<center style="padding: 40px"><img width="70%" src="https://github.com/PremKarki128/MSR-II/blob/master/Process/Image/manualEvalution1.png" title="suggestion mthod's name" /><img width="70%" src="https://github.com/PremKarki128/MSR-II/blob/master/Process/Image/manualEvaluation2.png" title="Log data of the Evaluation process" /></center>
+<center style="padding: 40px"><img width="70%" src="https://github.com/PremKarki128/MSR-II/blob/master/Process/Image/manualEvalution1.png" title="suggestion mthod's name" /><img width="70%" src="https://github.com/PremKarki128/MSR-II/blob/master/Process/Image/manualEvalution2.png" title="Log data of the Evaluation process" /></center>
 # Data
 Source of the data:  downloaded from the Authers provided Link
 #### INPUT DATA
